@@ -1,0 +1,20 @@
+names=['Dave',['Mark','Ann'],'Phil','Tom']
+print("\n==获取")
+print(names[1][0])
+print("\n==替换")
+names[2]='Jeff'
+print(names)
+print("\n==获取长度")
+print(len(names))
+print("\n==末尾添加")
+names.append('Kate')
+print(names)
+print("\n==移除")
+names[1].remove("Ann")
+print(names)
+print("\n==插入")
+names.insert(2,'Sydney')
+print(names)
+
+print("\n==前 2 与 后 2")
+print(names[0],names[1],names[-1],names[-2])
