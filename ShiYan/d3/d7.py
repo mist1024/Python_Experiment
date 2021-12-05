@@ -3,10 +3,9 @@ class OutNum(Exception):
         print("数字有点大了")
 
 def Flower():
-    n=(int)(input("输入一个整数"))
-    if(n>3):
+    Num=(int)(input("输入一个整数"))
+    if(Num>1000):
         raise OutNum()
-    Num=pow(10,n)
     print(Num)
     for i in range(1,Num):
         m=i%10

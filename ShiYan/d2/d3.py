@@ -2,15 +2,15 @@ import re
 
 
 def s1(string :str):
-    String = "[0-9]*"
+    String = "[1-9][0-9]*"
     print(re.fullmatch(String, string))
 
 def s2(string :str):
-    String = "-[0-9]*"
+    String = "-[1-9][0-9]*"
     print(re.fullmatch(String, string))
 
 def s3(string: str):
-    String = "-?[0-9]*"
+    String = "-?[1-9][0-9]*"
     print(re.fullmatch(String, string))
 
 def s4(string: str):
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
 
     # 1
-    string = '134123413241'
+    string = '01'
     s1(string)
 
     # 2

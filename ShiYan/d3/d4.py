@@ -8,12 +8,12 @@ def FeiRunNian(num):
 num=(int)(input("输入年份："))
 
 if num&3==0:
-    if(num%100==0):
-        if(num%400 ==0):
-            RunNian(num)
-        else:
-            FeiRunNian(num)
-    else:
-        RunNian(num)
-else:
     FeiRunNian(num)
+else:
+    if (num % 100):
+        RunNian(num)
+    else:
+        if (num % 400):
+            FeiRunNian(num)
+        else:
+            RunNian(num)

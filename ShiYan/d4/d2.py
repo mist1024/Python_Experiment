@@ -9,10 +9,10 @@ def gcd(a:int,b:int) ->int:
             a,b=b,a
         return gcd(a-b,b) # 更相减损术
 
-    elif a&1 and b&1==0:
+    elif a&1:
         return gcd(a,b>>1)
 
-    elif a&1==0 and b&1:
+    elif b&1:
         return gcd(a>>1 ,b)
 
     else:

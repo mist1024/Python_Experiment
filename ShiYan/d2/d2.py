@@ -8,5 +8,6 @@ print(info)
 info["stu04"]="赵六"
 print(info)
 del info["stu04"]
+
 info.pop("stu03")
 print(info)

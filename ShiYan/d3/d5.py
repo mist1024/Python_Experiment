@@ -1,9 +1,8 @@
 
-def JieChen(num) -> int:
+def JieChen(num : int) -> int:
     if(num==0 | num==1):
         return 1
-    else:
-        return num * JieChen(num-1)
+    return num * JieChen(num-1)
 
 
 

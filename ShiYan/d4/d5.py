@@ -11,8 +11,8 @@ def Upper(string: str):
 
 if __name__ == '__main__':
     string = "fdsadfWEASDFA"
-    # 库函数
-    Upper(string)
+    # 库函数 位运算失败
+    # Upper(string)
 
     print(string)
     print(string.lower())
